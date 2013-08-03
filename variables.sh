@@ -3,7 +3,7 @@ APACHE_MOD_MACRO_VERSION="1.1.11"    # http://people.apache.org/~fabien/mod_macr
 APACHE_TGZ_FILE="apache-${APACHE_VERSION}.tar.gz"
 
 ANT_VERSION="1.9.2"    # http://ant.apache.org/bindownload.cgi
-ANT_CONTRIB_VERSION="1.0b5"    # http://ant-contrib.sourceforge.net/
+ANT_CONTRIB_VERSION="1.0b3"    # http://ant-contrib.sourceforge.net/
 ANT_TGZ_FILE="ant-${ANT_VERSION}.tar.gz"
 
 PHP_VERSION="5.3.24"    # http://php.net/downloads.php
