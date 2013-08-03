@@ -2,7 +2,7 @@ APACHE_VERSION="2.2.25"    # http://httpd.apache.org/download.cgi
 APACHE_MOD_MACRO_VERSION="1.1.11"    # http://people.apache.org/~fabien/mod_macro/
 APACHE_TGZ_FILE="apache-${APACHE_VERSION}.tar.gz"
 
-ANT_VERSION="1.9.0"    # http://ant.apache.org/bindownload.cgi
+ANT_VERSION="1.9.2"    # http://ant.apache.org/bindownload.cgi
 ANT_CONTRIB_VERSION="1.0b3"    # http://ant-contrib.sourceforge.net/
 ANT_TGZ_FILE="ant-${ANT_VERSION}.tar.gz"
 
