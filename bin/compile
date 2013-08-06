@@ -75,7 +75,7 @@ $CURL_CMD "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$MANIFEST_FILE"
 if [ ! -f "$APACHE_TGZ_FILE" ] || check_md5 "$APACHE_TGZ_FILE"; then
     echo "-----> Bundling Apache v${APACHE_VERSION}"
     $CURL_CMD "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$APACHE_TGZ_FILE"
-    sleep 61
+    sleep 120
 else
     echo "-----> Using cached Apache v${APACHE_VERSION}"
 fi
