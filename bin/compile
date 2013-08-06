@@ -15,7 +15,7 @@ if [ "$APPLICATION_ENV" = "local" ]; then
 fi
 BUNDLE_DIR="$CACHE_DIR/bundles"
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
-CURL_CMD="curl --max-time 60 -O --location"
+CURL_CMD="curl --silent --max-time 60 -O --location"
 
 . $BIN_DIR/../variables.sh
 
@@ -74,8 +74,8 @@ $CURL_CMD "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$MANIFEST_FILE"
 
 if [ ! -f "$APACHE_TGZ_FILE" ] || check_md5 "$APACHE_TGZ_FILE"; then
     echo "-----> Bundling Apache v${APACHE_VERSION}"
-    $CURL_CMD "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$APACHE_TGZ_FILE"
-    sleep 120
+    # $CURL_CMD "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$APACHE_TGZ_FILE"
+    curl --silent --max-time 60 -O --location "https://s3.amazonaws.com/$BUILDPACK_S3_BUCKET/$APACHE_TGZ_FILE"
 else
     echo "-----> Using cached Apache v${APACHE_VERSION}"
 fi
