@@ -15,7 +15,8 @@ if [ "$APPLICATION_ENV" = "local" ]; then
 fi
 BUNDLE_DIR="$CACHE_DIR/bundles"
 LP_DIR=`cd $(dirname $0); cd ..; pwd`
-CURL_CMD="curl --silent --max-time 60 -O --location"
+# CURL_CMD="curl --silent --max-time 60 -O --location"
+CURL_CMD="curl --max-time 60 -O --location"
 
 . $BIN_DIR/../variables.sh
 
