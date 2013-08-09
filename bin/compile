@@ -151,6 +151,7 @@ if [ -f www/rollout.sh ]; then
 fi
 popd > /dev/null
 
+echo "-----> Writing to boot.sh"
 cat >> boot.sh <<EOF
     # Make the Heroku environment variables available to Apache and PHP
     echo "-----> Including env variables in Apache"
