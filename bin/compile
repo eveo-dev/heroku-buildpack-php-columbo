@@ -191,7 +191,7 @@ cat >> boot.sh <<EOF
     fi
 EOF
 
-chmod 755 boot.sh
+chmod +x boot.sh
 
 if [ "$APPLICATION_ENV" = "local" ]; then
     cat >> restart.sh <<EOF
